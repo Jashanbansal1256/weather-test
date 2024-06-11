@@ -1,5 +1,6 @@
 {
   "name": "weather-test",
+"homepage": "https://Jashanbansal1256.github.io/weather-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +14,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
     "build": "react-scripts build",
+    "deploy":"gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
